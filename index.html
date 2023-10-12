@@ -2,28 +2,57 @@
 	<head>
 		<title>Velasco Website</title>
 		<link rel="stylesheet" type="text/css" href="styles.css" >
+		<script src="script.js"></script>
 	</head>
 	
 	<body>
-		<div id="container">
-			<div id="header">
-				<h1> Alex Velasco <hr/> </h1>
+		<div id="header">
+			<h1> Velas.co <hr/> </h1>
+			 <!-- <iframe src="menu.html" frameborder="0" width="100%" height="200"></iframe> -->
+			 <div class="menu">
+				<div class="menu-item">
+					<a class="selected" href="index.html" target="_top">Home</a>
+						<div class="submenu">
+							<a href="index.html" target="_top">Home</a>
+							<a href="index.html" target="_top">Home</a>
+							<a href="index.html" target="_top">Home</a>
+						</div>
+				</div>
+				<div class="menu-item">
+					<a class="selected" href="about.html" target="_top">About</a>
+						<div class="submenu">
+							<a href="about.html" target="_top">About</a>
+							<a href="about.html" target="_top">About</a>
+							<a href="about.html" target="_top">About</a>
+						</div>
+				</div>
+				<div class="menu-item">
+					<a class="selected" href="contact.html" target="_top">Contact</a>
+						<div class="submenu">
+							<a href="contact.html" target="_top">Contact</a>
+							<a href="contact.html" target="_top">Contact</a>
+							<a href="contact.html" target="_top">Contact</a>
+						</div>
+				</div>
 			</div>
-			
+		</div>
+
+		<div id="container">
+
 			<div id="content">
 			
 				<div id="nav">
 					<h3>Navigation</h3>
 						<ul>
-							<li><a class="selected" href="">Home</a></li>
-							<li><a class="selected" href="">About</a></li>
-							<li><a class="selected" href="">Contact</a></li>
+							<li><a class="selected" href="index.html">Home</a></li>
+							<li><a class="selected" href="about.html">About</a></li>
+							<li><a class="selected" href="contact.html">Contact</a></li>
 						</ul>
 				</div>
 				
 				<div id="main">
 					<h2>
-					Homepage
+						Homepage
 					</h2>
 					<p>
 						I am Alexander Velasco and this is the start of my website creation.<br/>
@@ -34,7 +63,7 @@
 			</div>
 			
 			<div id="footer">
-				Copyright &copy; 2020 Alexander Velasco
+				Copyright &copy; 2023 Alexander Velasco
 			</div>
 		</div>
 	</body>

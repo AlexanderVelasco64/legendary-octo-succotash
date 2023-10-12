@@ -25,9 +25,74 @@ h1, h2, h3
 #header
 	{
 		background-color: #6e6e6e;
+		width: auto;
 		color: black;
 		text-align: center;
 		padding: 10px
+	}
+
+/* Ensure the menu spans the full width of the iframe */
+.menu 
+	{
+		width: 100%;
+		display: flex;
+		background-color: rgb(15, 15, 15); /* Add background color to style the menu */
+		color: #fff;
+	}
+	
+/* Style the anchor links within the menu */
+.menu a 
+	{
+		text-decoration: none;
+		color: #fff;
+		padding: 10px;
+		flex: 1; /* Distribute width equally among the menu items */
+		text-align: center;
+	}
+
+/* Add hover effect for the links */
+.menu a:hover 
+	{
+		background-color: #555;
+	}
+
+.menu-item
+	{
+		position: relative;
+		margin: 10px;
+	}
+
+.menu-item a 
+	{
+		text-decoration: none;
+		color: rgb(254, 254, 254);
+		display: block;
+	}
+	
+.submenu
+	{
+		display: none;
+		position: absolute;
+		top: 100%;
+		left: 0;
+		background-color: rgb(60, 57, 57);
+		box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+	}
+	
+.menu-item:hover .submenu
+	{
+		display: block;
+	}
+	
+.submenu a
+	{
+		display: block;
+		padding: 10px;
+	}
+	
+.submenu a:hover 
+	{
+		background-color: #252525;
 	}
 
 #content
